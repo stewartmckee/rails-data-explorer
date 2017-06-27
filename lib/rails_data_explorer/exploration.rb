@@ -22,7 +22,7 @@ class RailsDataExplorer
     # @param data_series_names [Array<String>]
     # @return [String]
     def self.compute_dom_id(data_series_names)
-      "rde-exploration-#{ data_series_names.sort.map { |e| e.parameterize('') }.join('-') }"
+      "rde-exploration-#{ data_series_names.sort.map { |e| e.parameterize }.join('-') }"
     end
 
     # Initializes a new visualization.
